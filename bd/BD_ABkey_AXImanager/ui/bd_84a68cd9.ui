@@ -1,0 +1,81 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.781955",
+   "Default View_TopLeft":"-959,0",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port default_sysclk1_300 -pg 1 -lvl 0 -x 0 -y 1020 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x 0 -y 1040 -defaultsOSRD
+preplace port port-id_AXImanager_clkb -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_AXImanager_enb -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_AXImanager_rstb -pg 1 -lvl 0 -x 0 -y 200 -defaultsOSRD
+preplace port port-id_clk_out_125M -pg 1 -lvl 6 -x 1500 -y 1030 -defaultsOSRD
+preplace port port-id_Asecretkey_rstb -pg 1 -lvl 0 -x 0 -y 600 -defaultsOSRD
+preplace port port-id_Asecretkey_clkb -pg 1 -lvl 0 -x 0 -y 540 -defaultsOSRD
+preplace port port-id_Asecretkey_enb -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace port port-id_Bsecretkey_rstb -pg 1 -lvl 0 -x 0 -y 1230 -defaultsOSRD
+preplace port port-id_Bsecretkey_enb -pg 1 -lvl 0 -x 0 -y 1210 -defaultsOSRD
+preplace port port-id_Bsecretkey_clkb -pg 1 -lvl 0 -x 0 -y 1150 -defaultsOSRD
+preplace portBus AXImanager_addrb -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus AXImanager_dinb -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace portBus AXImanager_doutb -pg 1 -lvl 6 -x 1500 -y 280 -defaultsOSRD
+preplace portBus AXImanager_web -pg 1 -lvl 0 -x 0 -y 360 -defaultsOSRD
+preplace portBus proc_rst_n -pg 1 -lvl 6 -x 1500 -y 730 -defaultsOSRD
+preplace portBus Asecretkey_addrb -pg 1 -lvl 0 -x 0 -y 380 -defaultsOSRD
+preplace portBus Asecretkey_dinb -pg 1 -lvl 0 -x 0 -y 560 -defaultsOSRD
+preplace portBus Asecretkey_doutb -pg 1 -lvl 6 -x 1500 -y 680 -defaultsOSRD
+preplace portBus Asecretkey_web -pg 1 -lvl 0 -x 0 -y 620 -defaultsOSRD
+preplace portBus Bsecretkey_doutb -pg 1 -lvl 6 -x 1500 -y 1310 -defaultsOSRD
+preplace portBus Bsecretkey_dinb -pg 1 -lvl 0 -x 0 -y 1170 -defaultsOSRD
+preplace portBus Bsecretkey_addrb -pg 1 -lvl 0 -x 0 -y 1130 -defaultsOSRD
+preplace portBus Bsecretkey_web -pg 1 -lvl 0 -x 0 -y 1250 -defaultsOSRD
+preplace inst hdlverifier_axi_mana_0 -pg 1 -lvl 2 -x 360 -y 690 -defaultsOSRD
+preplace inst clk_wiz_0 -pg 1 -lvl 1 -x 130 -y 1030 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 5 -x 1310 -y 930 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 3 -x 630 -y 770 -defaultsOSRD
+preplace inst AXImanager_bram_ctrl -pg 1 -lvl 4 -x 970 -y 280 -defaultsOSRD
+preplace inst AXImanager_bram -pg 1 -lvl 5 -x 1310 -y 140 -defaultsOSRD
+preplace inst Asecretkey_bram_ctrl -pg 1 -lvl 4 -x 970 -y 460 -defaultsOSRD
+preplace inst Bsecretkey_bram_ctrl -pg 1 -lvl 4 -x 970 -y 810 -defaultsOSRD
+preplace inst Asecretkey_bram -pg 1 -lvl 5 -x 1310 -y 540 -defaultsOSRD
+preplace inst Bsecretkey_bram -pg 1 -lvl 5 -x 1310 -y 1170 -defaultsOSRD
+preplace netloc AXImanager_bram_doutb 1 4 2 1140 280 NJ
+preplace netloc Asiftedkey_bram_doutb 1 4 2 1140 680 NJ
+preplace netloc Bsiftedkey_bram_doutb 1 4 2 1140 1310 NJ
+preplace netloc addrb_0_1 1 0 5 NJ 100 NJ 100 NJ 100 NJ 100 NJ
+preplace netloc addrb_0_2 1 0 5 NJ 380 NJ 380 NJ 380 NJ 380 1130J
+preplace netloc addrb_0_3 1 0 5 NJ 1130 NJ 1130 NJ 1130 NJ 1130 NJ
+preplace netloc clk_wiz_0_clk_out1 1 1 4 240 770 470 930 810 890 NJ
+preplace netloc clk_wiz_0_clk_out2 1 1 5 NJ 1030 NJ 1030 NJ 1030 NJ 1030 NJ
+preplace netloc clk_wiz_0_locked 1 1 4 250J 970 NJ 970 NJ 970 N
+preplace netloc clkb_0_1 1 0 5 NJ 120 NJ 120 NJ 120 NJ 120 NJ
+preplace netloc clkb_0_2 1 0 5 NJ 540 NJ 540 NJ 540 NJ 540 1110J
+preplace netloc clkb_0_3 1 0 5 NJ 1150 NJ 1150 NJ 1150 NJ 1150 NJ
+preplace netloc dinb_0_1 1 0 5 NJ 140 NJ 140 NJ 140 NJ 140 NJ
+preplace netloc dinb_0_2 1 0 5 NJ 560 NJ 560 NJ 560 NJ 560 1120J
+preplace netloc dinb_0_3 1 0 5 NJ 1170 NJ 1170 NJ 1170 NJ 1170 NJ
+preplace netloc enb_0_1 1 0 5 NJ 180 NJ 180 NJ 180 NJ 180 NJ
+preplace netloc enb_0_2 1 0 5 NJ 580 NJ 580 NJ 580 NJ 580 NJ
+preplace netloc enb_0_3 1 0 5 NJ 1210 NJ 1210 NJ 1210 NJ 1210 NJ
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 1 5 250 760 480 940 830 730 NJ 730 1480
+preplace netloc reset_1 1 0 5 20 950 NJ 950 NJ 950 NJ 950 1140
+preplace netloc rstb_0_1 1 0 5 NJ 200 NJ 200 NJ 200 780J 190 1130J
+preplace netloc rstb_0_2 1 0 5 NJ 600 NJ 600 NJ 600 NJ 600 NJ
+preplace netloc rstb_0_3 1 0 5 NJ 1230 NJ 1230 NJ 1230 NJ 1230 NJ
+preplace netloc web_0_1 1 0 5 NJ 360 NJ 360 NJ 360 790J 200 1120J
+preplace netloc web_0_2 1 0 5 20J 610 NJ 610 NJ 610 NJ 610 1120J
+preplace netloc web_0_3 1 0 5 NJ 1250 NJ 1250 NJ 1250 NJ 1250 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 4 1 N 460
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 4 1 1120 810n
+preplace netloc axi_bram_ctrl_BRAM_PORTA 1 4 1 1110 60n
+preplace netloc axi_interconnect_0_M00_AXI 1 3 1 800 260n
+preplace netloc axi_interconnect_0_M01_AXI 1 3 1 820 440n
+preplace netloc axi_interconnect_0_M02_AXI 1 3 1 N 790
+preplace netloc default_sysclk1_300_1 1 0 1 NJ 1020
+preplace netloc hdlverifier_axi_mana_0_axi4m 1 2 1 460 670n
+levelinfo -pg 1 0 130 360 630 970 1310 1500
+pagesize -pg 1 -db -bbox -sgen -210 0 1710 1330
+"
+}
+0

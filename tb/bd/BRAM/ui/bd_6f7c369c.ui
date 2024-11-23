@@ -1,0 +1,17 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-546,-184",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port BRAM_PORTA -pg 1 -lvl 0 -x 0 -y -10 -defaultsOSRD
+preplace port BRAM_PORTB -pg 1 -lvl 0 -x 0 -y 10 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 1 -x 140 -y 0 -defaultsOSRD
+preplace netloc BRAM_PORTA_1 1 0 1 N -10
+preplace netloc BRAM_PORTB_1 1 0 1 N 10
+levelinfo -pg 1 0 140 280
+pagesize -pg 1 -db -bbox -sgen -120 -70 280 120
+"
+}
+0

@@ -1,0 +1,464 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x782373B5F1DA7C0E",
+      "device": "xcku5p-ffvb676-2-e",
+      "gen_directory": "../../../../kcu116_PA_v2.gen/sources_1/bd/clock_generator",
+      "name": "clock_generator",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "clk_wiz_1": ""
+    },
+    "ports": {
+      "clk_in1_n": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "clock_generator_clk_in1_n",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "300000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_in1_p": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "clock_generator_clk_in1_p",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "300000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk_out2_100M": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "clock_generator_clk_wiz_1_0_clk_out1_100M",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out3_300M": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "clock_generator_clk_wiz_1_0_clk_out1_100M",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "300000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out1_62_5M": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "62500000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "clk_out4_375M": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "375000000",
+            "value_src": "ip_prop"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "clock_generator_clk_wiz_0_0",
+        "xci_path": "ip\\clock_generator_clk_wiz_0_0\\clock_generator_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "100.0"
+          },
+          "CLKOUT1_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "95.380"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "91.100"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "375"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "133.663"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "91.100"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "62.5"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_out1_375M"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "clk_out2_62_5M"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "11.250"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "10.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "3.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "18"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "OPTIMIZE_CLOCKING_STRUCTURE_EN": {
+            "value": "false"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "100.000"
+          },
+          "SECONDARY_SOURCE": {
+            "value": "Single_ended_clock_capable_pin"
+          },
+          "USE_PHASE_ALIGNMENT": {
+            "value": "false"
+          }
+        }
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "clock_generator_clk_wiz_1_0",
+        "xci_path": "ip\\clock_generator_clk_wiz_1_0\\clock_generator_clk_wiz_1_0.xci",
+        "inst_hier_path": "clk_wiz_1",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "33.330000000000005"
+          },
+          "CLKOUT1_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "101.475"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "77.836"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "100.000"
+          },
+          "CLKOUT2_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "81.814"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "77.836"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "300"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "CLKOUT3_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT3_JITTER": {
+            "value": "91.083"
+          },
+          "CLKOUT3_PHASE_ERROR": {
+            "value": "71.599"
+          },
+          "CLKOUT3_REQUESTED_OUT_FREQ": {
+            "value": "125.000"
+          },
+          "CLKOUT3_USED": {
+            "value": "false"
+          },
+          "CLKOUT4_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT5_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT6_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLKOUT7_DRIVES": {
+            "value": "Buffer"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_out1_100M"
+          },
+          "CLK_OUT2_PORT": {
+            "value": "clk_out2_300M"
+          },
+          "CLK_OUT3_PORT": {
+            "value": "clk_out3_125M"
+          },
+          "FEEDBACK_SOURCE": {
+            "value": "FDBK_AUTO"
+          },
+          "JITTER_SEL": {
+            "value": "No_Jitter"
+          },
+          "MMCM_BANDWIDTH": {
+            "value": "OPTIMIZED"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "4.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "3.333"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "12.000"
+          },
+          "MMCM_CLKOUT0_DUTY_CYCLE": {
+            "value": "0.500"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "4"
+          },
+          "MMCM_CLKOUT1_DUTY_CYCLE": {
+            "value": "0.500"
+          },
+          "MMCM_CLKOUT2_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "OPTIMIZE_CLOCKING_STRUCTURE_EN": {
+            "value": "false"
+          },
+          "OVERRIDE_MMCM": {
+            "value": "false"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "300"
+          },
+          "PRIM_SOURCE": {
+            "value": "Differential_clock_capable_pin"
+          },
+          "SECONDARY_SOURCE": {
+            "value": "Single_ended_clock_capable_pin"
+          },
+          "USE_DYN_PHASE_SHIFT": {
+            "value": "false"
+          },
+          "USE_MIN_POWER": {
+            "value": "false"
+          },
+          "USE_PHASE_ALIGNMENT": {
+            "value": "false"
+          },
+          "USE_SAFE_CLOCK_STARTUP": {
+            "value": "false"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_in1_n_1": {
+        "ports": [
+          "clk_in1_n",
+          "clk_wiz_1/clk_in1_n"
+        ]
+      },
+      "clk_in1_p_1": {
+        "ports": [
+          "clk_in1_p",
+          "clk_wiz_1/clk_in1_p"
+        ]
+      },
+      "clk_wiz_0_clk_out1_375M": {
+        "ports": [
+          "clk_wiz_0/clk_out1_375M",
+          "clk_out4_375M"
+        ]
+      },
+      "clk_wiz_0_clk_out2_62_5M": {
+        "ports": [
+          "clk_wiz_0/clk_out2_62_5M",
+          "clk_out1_62_5M"
+        ]
+      },
+      "clk_wiz_1_clk_out1_100M": {
+        "ports": [
+          "clk_wiz_1/clk_out1_100M",
+          "clk_out2_100M",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_1_clk_out2_300M": {
+        "ports": [
+          "clk_wiz_1/clk_out2_300M",
+          "clk_out3_300M"
+        ]
+      },
+      "reset_1": {
+        "ports": [
+          "reset",
+          "clk_wiz_1/reset",
+          "clk_wiz_0/reset"
+        ]
+      }
+    }
+  }
+}
