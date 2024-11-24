@@ -54,7 +54,7 @@ module A_unpacket (
     output wire A_RX_bram_enb,
     output wire A_RX_bram_web,
     output reg [10:0] A_RX_bram_addrb,
-    output wire [31:0] A_RX_bram_doutb
+    input wire [31:0] A_RX_bram_doutb
     
 
 );
