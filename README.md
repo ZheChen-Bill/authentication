@@ -35,7 +35,7 @@ The **Authentication Module** ensures the security and integrity of the classica
 - Reduces computational complexity with the **Barrett Reduction Algorithm**, where:
 
 ![圖片](https://github.com/user-attachments/assets/ddead3e8-5f6a-46a9-afbe-12d92a30b5d7)
-M = $2^32$ - 5
+M = 2^{32} - 5
 
 ![圖片](https://github.com/user-attachments/assets/e50c1ceb-b45c-48e0-b72e-0a5da4908f4f)
 
@@ -48,9 +48,7 @@ M = $2^32$ - 5
 
 ### OTP Hashing
 - Enhances security with an XOR operation:
-  \[
-  \text{Hash Tag} = \text{Toeplitz Output} \oplus \text{OTP Key}
-  \]
+  Hash Tag =(Toeplitz Output) ^ (OTP Key)
 
 ## Configuration Map
 The memory layout for pre-shared and dynamically updated keys is outlined below:
