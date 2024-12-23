@@ -7,7 +7,7 @@ The **Authentication Module** ensures the security and integrity of the classica
 ## Key Features
 
 ### High-Security Standards
-- Implements the lightweight authentication method described in [lightweightauthentication].
+- Implements the lightweight authentication method described in <light weight authentication in quantum key distillation>.
 - Minimizes memory usage to accommodate the storage-intensive nature of the distillation process.
 
 ### Three-Step Authentication Process
@@ -29,13 +29,18 @@ The **Authentication Module** ensures the security and integrity of the classica
 
 ### Polynomial Hashing
 - Calculates hashes using:
-  \[
-  H(x) = \left( \sum_{i=0}^{n-1} x_i \cdot p^i \right) \mod M
-  \]
+
+![圖片](https://github.com/user-attachments/assets/b5838985-b2b1-4ef3-8281-f7e412a272f3)
+
 - Reduces computational complexity with the **Barrett Reduction Algorithm**, where:
-  \[
-  \mu = \left\lfloor \frac{2^{64}}{M} \right\rfloor, \quad M = 2^{32} - 5
-  \]
+
+![圖片](https://github.com/user-attachments/assets/ddead3e8-5f6a-46a9-afbe-12d92a30b5d7)
+M = $2^32$ - 5
+
+![圖片](https://github.com/user-attachments/assets/e50c1ceb-b45c-48e0-b72e-0a5da4908f4f)
+
+![圖片](https://github.com/user-attachments/assets/6dc08e32-1960-42de-9199-765a16139b22)
+
 
 ### Toeplitz Hashing
 - Leverages DSP units for matrix multiplication.
